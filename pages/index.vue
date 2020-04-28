@@ -8,7 +8,7 @@
   <div class="has-text-centered">
           <Logo/>
   </div>
-        <Sidenav/>
+        <!-- <Sidenav/> -->
       </div>
       <div class="column is-10">
    			<div class="container">
