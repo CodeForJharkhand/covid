@@ -1,5 +1,11 @@
 
 export default {
+
+  router: {
+    base: '/covid/'
+  },
+
+
   mode: 'spa',
   /*
   ** Headers of the page
