@@ -2,14 +2,14 @@
 
 
 <section>
-    <a href="#" @click="$event.preventDefault(),toggle=!toggle" class="button is-fullwidth has-text-weight-bold is-hidden-desktop  
+    <!-- <a href="#" @click="$event.preventDefault(),toggle=!toggle" class="button is-fullwidth has-text-weight-bold is-hidden-desktop  
 " style="padding:20px"> 
 
  <span class="icon">
       <i class="fab fa-github"></i>
     </span>
 
-    Menu</a>
+    Menu</a> -->
 
 
    <aside class="menu"   :class="{'is-hidden-touch':toggle}"  style="padding:20px">
