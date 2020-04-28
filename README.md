@@ -19,4 +19,4 @@ $ npm run start
 $ npm run generate
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+Do you wish to contribute? shoot us a tweet at [Code For Jharkhand](https://twitter.com/CodeJharkhand).
