@@ -1,55 +1,114 @@
+
 <template>
-  <div>
-    <nuxt />
+<section>
+  <!-- <Nav/> -->
+  <!-- <hr class="mt-1 mb-1"> -->
+  <div class="containerx">
+    <div class="columns is-multiline">
+      <div class="column is-3 box" style="height:100%">
+  <div class="has-text-centered">
+          <Logo/>
+             <!-- <div class="column is-12-desktop is-12-mobile">
+                  <div class="is-size-7 has-font-weight-bold has-text-grey-light">Updated On <br>
+                  {{state.date}}</div>
+              </div> -->
   </div>
+        <Sidenav/>
+      </div>
+      <div class="column is-9">
+    <section class="hero ">
+        <div class="hero-body fade">
+        <router-view></router-view>
+        </div>
+</section>
+</div>
+    </div>
+
+  </div>
+
+  <Footer/>
+
+</section>
 </template>
 
-<style>
-html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
+<script>
+import Logo from '~/components/Logo.vue'
+import Nav from '~/components/Nav.vue'
+import Sidenav from '~/components/Sidenav.vue'
+import Footer from '~/components/Footer.vue'
+var swal=require('sweetalert2');
+// var x=require('moment');
+const moment = require('moment');
+
+
+
+export default {
+
+  data:function(){
+    return {
+      state:{},
+      data:{
+
+        tested:[],
+      },
+      sel:0,
+    }
+  },
+  
+  components: {
+    Logo,
+    Nav,
+    Footer,
+    Sidenav
+  },
+  methods:{
+      getStats(state){
+      	var self=this;
+      	this.$axios.$get('https://covidtrace.xyz/v2/api/data').then(function(data){
+      		// console.log(data);  
+          self.state=data[0];
+
+        //   self.state=self.data.statewise.filter(function(fil) {
+        //     // if(params.state==state)
+        //     return fil.state==state[0];
+        // })
+
+        // self.sel=self.data.tested.length-1;
+      			// self.state=data;
+
+      	}).catch(function(err){
+
+      			console.log(err);
+      	})
+        // this.state=data.statewise.filter(function(fil) {
+        //     // if(params.state==state)
+        //     return fil.state==state;
+        // })
+
+      }
+  },
+
+
+  mounted(){
+    this.getStats('Jharkhand');
+  },
+
+}
+</script>
+
+<style >
+.box20{
+  border-radius:20px;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
+@media(max-width: 767px) { /* <== You can change this break point as per your  needs */
+  .reverse-columns {
+    flex-direction: column-reverse;
+    display: flex;
+  }
 }
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-}
-
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
-}
 </style>
+
+
+

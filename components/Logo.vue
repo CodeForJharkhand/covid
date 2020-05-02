@@ -1,6 +1,6 @@
 <template>
-<svg width="150px" height="150px" viewBox="0 0 54 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+<svg width="150px" height="150px" class="fade" viewBox="0 0 54 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    
     <title>COVID19 Jharkhand</title>
     <desc>Created with Sketch.</desc>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="Ubuntu-Bold, Ubuntu" font-size="13" font-weight="bold" letter-spacing="-0.424086722" line-spacing="11">
@@ -13,17 +13,3 @@
     </g>
 </svg>
 </template>
-<style>
-.NuxtLogo {
-  animation: 1s appear;
-}
-
-@keyframes appear {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-</style>

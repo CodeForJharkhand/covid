@@ -13,9 +13,21 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.10.2",
     "@nuxtjs/bulma": "^1.2.1",
+    "@nuxtjs/firebase": "^5.2.0",
     "axios": "^0.19.2",
+    "firebase": "^7.14.2",
+    "install": "^0.13.0",
+    "moment": "^2.25.1",
+    "npm": "^6.14.4",
+    "numeral": "^2.0.6",
     "nuxt": "^2.0.0",
-    "nuxt-fontawesome": "^0.4.0"
+    "nuxt-fontawesome": "^0.4.0",
+    "nuxt-moment": "^1.0.4",
+    "nuxt-sweetalert2": "^1.0.0",
+    "sweetalert2": "^9.10.12"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "resolutions": {
+    "moment-timezone/moment": "2.18.1"
+  }
 }
