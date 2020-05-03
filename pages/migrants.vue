@@ -4,19 +4,35 @@
    <div class="columns">
        <div class="column">
 
-            <div class="is-size-3 has-font-weight-text">झारखण्ड हेल्पडेस्क</div>
-            <div class="is-size-7 is-uppercase has-text-grey-light"> a joint innitative by Ranchi Updates &amp;  Made In Ranchi</div>
+            <div class="is-size-3 has-text-weight-bold">झारखण्ड हेल्पडेस्क</div>
+            <div class="is-size-7 is-uppercase has-text-grey-light"> an innitative by Ranchi Updates &amp; in collaboration with Made In Ranchi</div>
    
-            <div class="columns is-multiline is-centered">
+            <div class="columns is-multiline">
 
                     <div class="column is-12">
                     <div class="box">
-                    <div class="is-size-4">एक पहल</div>
-                    <p class="is-size-6">देश में जब से लॉकडाउन लगा है हर दिन हमे कई लोग मैसेज भेजते रहते हैं कि हम इस शहर में फंसे हुए हैं, हम उस शहर में फंसे हुए हैं और वापस झारखण्ड आना चाहते हैं।  ऐसे लोगों की संख्या कल से काफी बढ़ गयी जब सरकार की पहल पर हैदराबाद और कोटा से झारखंडवासी वापस आये।  <br><br>  इसी को ध्यान में रखते हुए हमलोगों सोचा कि क्यों न एक "Database" बनाया जाए जिससे कि पता चल सके कि कहाँ कहाँ हमारे राज्य के लोग अबतक फंसे हुए हैं ये बात हमने शेयर कि रांची के ही एक और पेज <a href="https://facebook.com/madeinranchi" target="_blank">Made In Ranchi </a> के साथ और इस पुनीत कार्य में उन्होंने हमारा साथ दिया और उनकी टीम ने एक हमारे योजना को एक रूप दिया। <br> <br> और अब आपके सामने है "झारखण्ड हेल्पडेस्क" आप इसमें अपना डिटेल भर सकते हैं।  हमारा प्रयास रहेगा कि हम सम्बंधित अधिकारीयों तक ये डाटा पहुंचा सकें जिससे उन्हें भी पता चल जाए कि किस राज्य में कितने झारखंडवासी अबतक फंसे हुए हैं और अगर वो उनको वापस लाने की योजना बनाते हैं तो सीधे संपर्क कर सकें।
-
-                    </p>
+                    <div class="is-size-3 has-text-weight-bold">एक पहल</div>
+                
             
-                    <p>- Team Ranchi Updates</p>
+                <p>
+                    देश में जब से लॉकडाउन लगा है हर दिन हमे कई लोग मैसेज भेजते रहते हैं कि हम इस शहर में फंसे हुए हैं, हम उस शहर में फंसे हुए हैं और वापस झारखण्ड आना चाहते हैं। ऐसे लोगों की संख्या कल से काफी बढ़ गयी जब सरकार की पहल पर हैदराबाद और कोटा से झारखंडवासी वापस आये।
+
+                </p> <br>
+                    <p>
+                        इसी को ध्यान में रखते हुए हमलोगों सोचा कि क्यों न एक "Database" बनाया जाए जिससे कि पता चल सके कि कहाँ कहाँ हमारे राज्य के लोग अबतक फंसे हुए हैं ये बात हमने शेयर की रांची के ही एक और पेज <a href="https://facebook.com/madeinranchi" target="_blank">Made In Ranchi</a> के साथ और इस पुनीत कार्य में उन्होंने हमारा साथ दिया और उनकी टीम ने हमारी इस कल्पना को यथार्थ का रूप दिया।  
+
+                    </p> <br>
+                <p>
+                    और अब आपके सामने है "झारखण्ड हेल्पडेस्क" आप इसमें अपना डिटेल भर सकते हैं। हमारा प्रयास रहेगा कि हम सम्बंधित अधिकारीयों तक ये डाटा पहुंचा सकें जिससे उन्हें भी पता चल जाए कि किस राज्य में कितने झारखंडवासी अबतक फंसे हुए हैं और अगर वो उनको वापस लाने की योजना बनाते हैं तो सीधे संपर्क कर सकें।
+
+                </p>
+                 <br>
+                    <p>
+ धन्यवाद टीम <a href="https://facebook.com/madeinranchi" target="_blank">Made In Ranchi</a> को।  <br> <br>
+
+आभार <br>
+<strong>   टीम रांची अपडेट्स </strong>
+                    </p>
                     </div>   
 
                     </div>
@@ -28,18 +44,18 @@
                   <label for="">आपका नाम  (Your Name)</label>
                   <div class="control">
                       
-                        <input type="text" class="input is-capitalized" v-model="form.name" required placeholder="नीरज बा">
+                        <input type="text" class="input is-capitalized" v-model="form.name" required placeholder="Eg: नीरज/Neeraj">
                   </div>
               </div>
                 <div class="field">
                   <label for="">अभिभावक का नाम (Parent/Guardian's Name) </label>
                   <div class="control">
                       
-                        <input type="text" class="input is-capitalized" v-model="form.gname" required placeholder="धीराज ज ">
+                        <input type="text" class="input is-capitalized" v-model="form.gname" required placeholder="Eg: धीराज/Dhiraj">
                   </div>
               </div>
               <div class="field">
-                  <label for="">आपका पेशा / काम  क्या है ? (select he following one)</label>
+                  <label for="">आपका पेशा / काम  क्या है ? (Select the following)</label>
                   <div class="control">
                       <div class="select is-fullwidth">
                           <select name="" id="" v-model="form.type" required>
@@ -61,7 +77,7 @@
                   </div>
               </div>
                 <div class="field">
-                  <label for="">राज्य (State) </label>
+                  <label for="">आप किस राज्य में फसे हुए हैं ? (State) </label>
                 <div class="control">
                      <div class="select is-fullwidth">
                           <select name="" id="" v-model="form.state" required  @change="filter.selected=$event.target.value,getState()">
@@ -71,16 +87,27 @@
                 </div>
               </div>
                     <div class="field">
-                  <label for="">शहर  (Select City)</label>
+                  <label for="">शहर (Select City)</label>
                 <div class="control">
                      <div class="select is-fullwidth">
                           <select name="" id="" v-model="form.city" required>
-                              <option value="item" v-for="(item,index) in filter.city" :key="index">{{item.name}}</option>
+                              <option :value="item.name" v-for="(item,index) in filter.city" :key="index">{{item.name}}</option>
                           </select>
                       </div>
                 </div>
               </div>
 
+                 <div class="field">
+                  <label for="">आपको झारखण्ड के किस जिले में जाना है? (Your district in Jharkhand?)</label>
+                <div class="control">
+                     <div class="select is-fullwidth">
+                          <select name="" id="" v-model="form.jhcity" required>
+                              <option :value="item.name" v-for="(item,index) in filter.jhdistrict" :key="index">{{item.name}}</option>
+                          </select>
+                      </div>
+                </div>
+              </div>
+                <input type="hidden" v-model='form.ltime=Date()'>
           
               <div class="field">
                   <input type="submit" class="button is-info is-fullwidth has-text-weight-bold" :disabled='isLoading' value="Submit">
@@ -180,7 +207,8 @@ export default {
                             "Uttarakhand",
                             "West Bengal"],
                     city:[],
-                    selected:'Gujarat'
+                    selected:'Gujarat',
+                    jhdistrict:[],
                 },
                 data:data,
                 form:{},
@@ -199,6 +227,7 @@ export default {
         var self=this;
         var db = this.$fireStore;
         self.isLoading=true;
+        self.form.rtime=Date();
 
 db.collection("entry").add(self.form)
 .then(function(docRef) {
@@ -251,12 +280,42 @@ self.$swal.fire({
 
             });
 
+     },
+    getState:function(){
+                // console.log("i am being trig");
+                var self=this;
+
+            this.filter.city=data.filter(function(value){
+
+                    if(value.state==self.filter.selected){
+                        return value;
+                    }
+                    // return value
+
+            });
+
+     },
+         getJhState:function(){
+                // console.log("i am being trig");
+                var self=this;
+
+            this.filter.jhdistrict=data.filter(function(value){
+
+                    if(value.state=='Jharkhand'){
+                        return value;
+                    }
+                    // return value
+
+            });
+
      }
 
     },
+  
     mounted(){
 
                         this.getState(this.filter.selected);
+                        this.getJhState();
 
                      
 

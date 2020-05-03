@@ -1,11 +1,11 @@
 
 <template>
-<section>
+<section class="fade">
   <!-- <Nav/> -->
   <!-- <hr class="mt-1 mb-1"> -->
   <div class="containerx">
     <div class="columns is-multiline">
-      <div class="column is-3 box" style="height:100%">
+      <div class="column is-3 box" style="height:100vh;position: sticky; top: 0;">
   <div class="has-text-centered">
           <Logo/>
              <!-- <div class="column is-12-desktop is-12-mobile">

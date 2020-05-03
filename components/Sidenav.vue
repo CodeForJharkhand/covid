@@ -11,7 +11,7 @@
 
     Menu</a>
 
-   <aside class="menu"   :class="{'is-hidden-touch':toggle}"  style="padding:20px">
+   <aside class="menu"   :class="{'is-hidden-touch':toggle}"  style="padding:20px;">
 
     
   <p class="menu-label">

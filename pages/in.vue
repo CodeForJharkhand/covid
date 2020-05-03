@@ -127,7 +127,7 @@
   <div class="field">
         <label for="">Password</label>      
         <div class="control">
-          <input type="text" class="input"  v-model="form.password">
+          <input type="text" class="input"  v-model="form.password" required>
         </div>
     </div>
 
