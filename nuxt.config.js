@@ -99,6 +99,11 @@ export default {
    axios: {
     // proxyHeaders: false
   },
+
+  generate: {
+    dir:'docs'
+  },
+
   /*
   ** Build configuration
   */

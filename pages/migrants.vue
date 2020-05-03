@@ -102,7 +102,7 @@
                 <div class="control">
                      <div class="select is-fullwidth">
                           <select name="" id="" v-model="form.jhcity" required>
-                              <option :value="item.name" v-for="(item,index) in filter.jhdistrict" :key="index">{{item.name}}</option>
+                              <option :value="item" v-for="(item,index) in filter.jhdistrict" :key="index">{{item}}</option>
                           </select>
                       </div>
                 </div>
@@ -208,7 +208,7 @@ export default {
                             "West Bengal"],
                     city:[],
                     selected:'Gujarat',
-                    jhdistrict:[],
+                    jhdistrict:["Garhwa","Palamu","Latehar","Chatra","Hazaribagh","Koderma","Giridih","Ramgarh","Bokaro","Dhanbad","Gumla","Lohardaga","Simdega","Ranchi","Khunti","West Singhbhum","Saraikela Kharsawan","East Singhbhum","Jamtara","Deoghar","Dumka","Pakur","Godda","Sahebganj"],
                 },
                 data:data,
                 form:{},
@@ -295,27 +295,27 @@ self.$swal.fire({
             });
 
      },
-         getJhState:function(){
-                // console.log("i am being trig");
-                var self=this;
+    //      getJhState:function(){
+    //             // console.log("i am being trig");
+    //             var self=this;
 
-            this.filter.jhdistrict=data.filter(function(value){
+    //         this.filter.jhdistrict=data.filter(function(value){
 
-                    if(value.state=='Jharkhand'){
-                        return value;
-                    }
-                    // return value
+    //                 if(value.state=='Jharkhand'){
+    //                     return value;
+    //                 }
+    //                 // return value
 
-            });
+    //         });
 
-     }
+    //  }
 
     },
   
     mounted(){
 
                         this.getState(this.filter.selected);
-                        this.getJhState();
+                        // this.getJhState();
 
                      
 
