@@ -35,6 +35,7 @@
           <!-- <a href="https://www.google.com/maps/d/u/0/viewer?mid=124Nzwc-DyOAsLE4qMeyxtmQ5mR_yJ9v5&shorturl=1" target="_blank">Community Kitchen</a> -->
             <nuxt-link to="/kitchen"  :class="{'is-active':this.$parent.$route.path=='/kitchen'}"> Community Kitchen</nuxt-link>
                         <!-- <nuxt-link to="/milk"  :class="{'is-active':this.$parent.$route.path=='/milk'}"> Milk</nuxt-link> -->
+            <nuxt-link to="/hospitals"  :class="{'is-active':this.$parent.$route.path=='/hospitals'}"> Hospitals</nuxt-link>
 
 
   </ul>
