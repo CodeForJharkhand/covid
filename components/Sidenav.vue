@@ -28,7 +28,7 @@
     Covid Help
   </p>
     <ul class="menu-list">
-            <nuxt-link to="/migrants"  :class="{'is-active':this.$parent.$route.path=='/migrants'}"> एक पहल | Migrants</nuxt-link>
+            <!-- <nuxt-link to="/migrants"  :class="{'is-active':this.$parent.$route.path=='/migrants'}"> एक पहल | Migrants</nuxt-link> -->
 
         <!-- <nuxt-link to="/migrants">Migrants</nuxt-link> -->
           <!-- <nuxt-link to="/sos">S.O.S</nuxt-link> -->
