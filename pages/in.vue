@@ -191,23 +191,21 @@ export default {
                   var main=resp.data[0];
 
                   var str={
+                    
                     collected:main.testing.collected,
                     tested:main.testing.tested,
                     positive:main.testing.positive,
                     negative:main.testing.negative,
 
                     active:main.status.active,
-                       confirmed:main.status.confirmed,
-                          deaths:main.status.deaths,
-                             recovered:main.status.recovered,
+                    confirmed:main.status.confirmed,
+                    deaths:main.status.deaths,
+                    recovered:main.status.recovered,
 
-                                surveillance:main.quarantine.surveillance,
-                                   completedObservation:main.quarantine.completedObservation,
-                                      centre:main.quarantine.centre,
-                                         home:main.quarantine.home,
-
-
-
+                    surveillance:main.quarantine.surveillance,
+                    completedObservation:main.quarantine.completedObservation,
+                    centre:main.quarantine.centre,
+                    home:main.quarantine.home,
                   };
                   self.form=str;
 

@@ -19,8 +19,8 @@
   </p>
   <ul class="menu-list">
       <nuxt-link to="/" :class="{'is-active':this.$parent.$route.path=='/'}"> Cases</nuxt-link>
-      <nuxt-link to="/tests" :class="{'is-active':this.$parent.$route.path=='/tests'}">Tests</nuxt-link>
-      <nuxt-link to="/quarantine"  :class="{'is-active':this.$parent.$route.path=='/quarantine'}"> Quarantine</nuxt-link>
+      <!-- <nuxt-link to="/tests" :class="{'is-active':this.$parent.$route.path=='/tests'}">Tests</nuxt-link> -->
+      <!-- <nuxt-link to="/quarantine"  :class="{'is-active':this.$parent.$route.path=='/quarantine'}"> Quarantine</nuxt-link> -->
          <!-- <nuxt-link to="/hospitals">Hospitals</nuxt-link> -->
 
   </ul>

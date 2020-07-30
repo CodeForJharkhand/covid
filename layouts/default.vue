@@ -8,10 +8,10 @@
       <div class="column is-3 box" >
   <div class="has-text-centered">
           <Logo/>
-             <!-- <div class="column is-12-desktop is-12-mobile">
+             <div class="column is-12-desktop is-12-mobile">
                   <div class="is-size-7 has-font-weight-bold has-text-grey-light">Updated On <br>
-                  {{state.date}}</div>
-              </div> -->
+                  {{updatedOn}}</div>
+              </div>
   </div>
         <Sidenav/>
       </div>
@@ -52,6 +52,7 @@ export default {
         tested:[],
       },
       sel:0,
+      updatedOn:'---',
     }
   },
   
@@ -67,6 +68,7 @@ export default {
       	this.$axios.$get('https://covidtrace.xyz/v2/api/data').then(function(data){
       		// console.log(data);  
           self.state=data[0];
+          self.updatedOn=new Date(data[0].createdAt)
 
         //   self.state=self.data.statewise.filter(function(fil) {
         //     // if(params.state==state)
