@@ -55,7 +55,7 @@
        <div class="field">
         <label for="">Confirmed</label>      
         <div class="control">
-          <input type="number" class="input"  v-model="form.confirmed">
+          <input type="number" class="input"  v-model="form.positive">
         </div>
     </div>
 
@@ -73,11 +73,19 @@
         </div>
     </div>
 
+     <div class="field">
+        <label for="">Password</label>      
+        <div class="control">
+          <input type="text" class="input"  v-model="form.password" required>
+        </div>
+    </div>
+
+
   </div>
 
   <hr>
 
-  <div class="box">
+  <!-- <div class="box">
     <div class="is-size-6 has-text-weight-bold">Quarantine</div> <hr>
 
     <div class="field">
@@ -124,16 +132,10 @@
         </div>
     </div>
 
-  <div class="field">
-        <label for="">Password</label>      
-        <div class="control">
-          <input type="text" class="input"  v-model="form.password" required>
-        </div>
-    </div>
+ 
 
 
-
-  </div>
+  </div> -->
 
   <input type="submit" class="button is-info has-text-weight-bold is-fullwidth" value="Publish">
 
@@ -198,7 +200,7 @@ export default {
                     negative:main.testing.negative,
 
                     active:main.status.active,
-                    confirmed:main.status.confirmed,
+                    confirmed:main.status.positive,
                     deaths:main.status.deaths,
                     recovered:main.status.recovered,
 

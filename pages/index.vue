@@ -4,7 +4,7 @@
    		
    				         <div class="columns is-desktop is-mobile is-multiline" v-if="this.$parent.state.status">
               <div class="column is-12-desktop is-12-mobile">
-                  <div class="is-size-6 has-text-weight-bold">Status</div>
+                  <div class="is-size-4 has-text-weight-bold has-text-centered-mobile">Status</div>
               </div>
 
 
@@ -61,66 +61,12 @@
     </div>
     
 
-          <div class="columns is-multiline  is-desktop is-mobile" v-if="this.$parent.state.quarantine">
-
-              <div class="column is-12-desktop is-12-mobile">
-                    <div class="is-size-6 has-text-weight-bold">Quarantine Stats</div>
-              </div>  
-
-                 <div class="column is-3-desktop is-6-mobile">
-              
-                  <div class="box has-text-centered has-text-info has-text-weight-bold">
-                     <div class="is-size-6 is-capitalized">surveillance</div>
-                      <div class="is-size-4">
-                          {{this.$parent.state.quarantine.surveillance |formatNumber}}
-                      </div>
-                  </div>
-
-              </div>
-
-                 <div class="column is-3-desktop is-6-mobile">
-              
-                  <div class="box has-text-centered  has-text-weight-bold">
-                     <div class="is-size-6 is-capitalized">Off Observation </div>
-                      <div class="is-size-4">
-                          {{this.$parent.state.quarantine.completedObservation |formatNumber}}
-                      </div>
-                  </div>
-
-              </div>
-            <div class="column is-3-desktop is-6-mobile">
-              
-                  <div class="box has-text-centered has-text-danger has-text-weight-bold">
-                     <div class="is-size-6 is-capitalized">home</div>
-                      <div class="is-size-4">
-                          {{this.$parent.state.quarantine.home |formatNumber}}
-                      </div>
-                  </div>
-
-              </div>
-
-                 <div class="column is-3-desktop is-6-mobile">
-              
-                  <div class="box has-text-centered has-text-success has-text-weight-bold">
-                     <div class="is-size-6 is-capitalized">centre</div>
-                      <div class="is-size-4">
-                          {{this.$parent.state.quarantine.centre |formatNumber}}
-                      </div>
-                  </div>
-
-              </div>
-
-             
-
-
-
-          </div>
-
-          <!-- tests -->
+     
       <div class="columns is-multiline  is-desktop is-mobile">
 
               <div class="column is-12-desktop is-12-mobile">
-                    <div class="is-size-6 has-text-weight-bold">Testing</div>
+                                    <div class="is-size-4 has-text-weight-bold has-text-centered-mobile">Testing</div>
+
               </div>  
 
                  <div class="column is-3-desktop is-6-mobile">
@@ -176,6 +122,11 @@
               <div class="column">
                           <div class="is-size-7 has-text-grey has-text-centered">        Last Updated on {{this.$parent.updatedOn}}
 </div>
+
+ <div class="is-size-7 has-text-grey has-text-centered is-capitalized">   
+     Quarantine Stats has been removed from Jharkhand Government Bulletin on 6th August 2020 onwards
+</div>
+
               </div>
           </div>
       </div>
