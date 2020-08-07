@@ -13,7 +13,7 @@
                   <div class="box has-text-centered has-text-info has-text-weight-bold	">
                      <div class="is-size-6 is-capitalized ">confirmed</div>
                       <div class="is-size-4">
-                    {{this.$parent.state.status.confirmed |formatNumber}}
+                          {{this.$parent.state.testing.positive |formatNumber}}
                       </div>
                   </div>
 

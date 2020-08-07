@@ -85,57 +85,6 @@
 
   <hr>
 
-  <!-- <div class="box">
-    <div class="is-size-6 has-text-weight-bold">Quarantine</div> <hr>
-
-    <div class="field">
-        <label for="">at surveillance</label>      
-        <div class="control">
-          <input type="number" class="input"  v-model="form.surveillance">
-        </div>
-    </div>
-
-       <div class="field">
-        <label for="">Completed Observation</label>      
-        <div class="control">
-          <input type="number" class="input"  v-model="form.completedObservation">
-        </div>
-    </div>
-
-       <div class="field">
-        <label for="">at centre</label>      
-        <div class="control">
-          <input type="number" class="input"  v-model="form.centre">
-        </div>
-    </div>
-
-       <div class="field">
-        <label for="">at home</label>      
-        <div class="control">
-          <input type="number" class="input"  v-model="form.home">
-        </div>
-    </div>
-
-
-           <div class="field">
-        <label for="">Type</label>      
-        <div class="control">
-          <input type="text" class="input"  v-model="form.type='new'"  disabled>
-        </div>
-    </div>
-
-
-       <div class="field">
-        <label for="">Source</label>      
-        <div class="control">
-          <input type="text" class="input"  v-model="form.source">
-        </div>
-    </div>
-
- 
-
-
-  </div> -->
 
   <input type="submit" class="button is-info has-text-weight-bold is-fullwidth" value="Publish">
 
