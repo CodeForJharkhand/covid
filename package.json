@@ -14,7 +14,7 @@
     "@nuxtjs/axios": "^5.10.2",
     "@nuxtjs/bulma": "^1.2.1",
     "@nuxtjs/firebase": "^5.2.0",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "firebase": "^7.14.2",
     "install": "^0.13.0",
     "moment": "^2.25.1",
